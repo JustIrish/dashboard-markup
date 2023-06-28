@@ -1,7 +1,8 @@
 .menu {
   width: 306px;
-  padding: 28px;
+  padding: 28px 28px 28px 0;
   float: left;
+  background-color: var(--main-backgr-color);
 }
 
 .menu__item {

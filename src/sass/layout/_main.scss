@@ -1,0 +1,43 @@
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 349px;
+  padding: 30px 40px 40px;
+  background-color: var(--main-backgr-color);
+  border-radius: 30px;
+
+  @include desktop {
+    width: 968px;
+  }
+}
+
+.section__title {
+  margin-bottom: 7px;
+  color: var(--title-text-color);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.22px;
+}
+
+.section__text {
+  color: #16c098;
+  font-weight: 400;
+  letter-spacing: -0.14px;
+}
+
+.input {
+  width: 216px;
+  padding: 10px 10px 10px 40px;
+  background-color: var(--special-backgr-color);
+  border-radius: 10px;
+  border-color: transparent;
+  color: var(--second-text-color);
+  font-size: 12px;
+}
+
+.input__icon {
+  position: absolute;
+  right: 220px;
+}
