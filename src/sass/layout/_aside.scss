@@ -1,0 +1,45 @@
+.menu {
+  width: 306px;
+  padding: 28px;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 11px;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    justify-content: space-between;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--detail-color);
+  }
+}
+
+.menu__title-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.menu__title {
+  color: var(--menu-text-color);
+  margin-left: 14px;
+}
+
+.menu__title--current {
+  color: #ffffff;
+}
+
+.menu__item--current {
+  background-color: var(--accent-color);
+}
