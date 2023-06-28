@@ -1,2 +1,7 @@
-@import './common';
-@import './example';
+@import './utils/vars';
+@import './base/reset';
+@import './base/common';
+@import './utils/mixins';
+@import './components/conteiner';
+@import './layout/header';
+@import './layout/aside';
