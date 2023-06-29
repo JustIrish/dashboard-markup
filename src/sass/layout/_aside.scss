@@ -1,6 +1,8 @@
 .menu {
+  position: relative;
   width: 306px;
-  padding: 28px 28px 28px 0;
+  height: 100vh;
+  padding: 28px;
   float: left;
   background-color: var(--main-backgr-color);
 }
@@ -44,4 +46,26 @@
 
 .menu__item--current {
   background-color: var(--accent-color);
+}
+
+.user {
+  position: absolute;
+  left: 11px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user__avatar {
+  width: 42px;
+}
+
+.user__name {
+  color: var(--title-text-color);
+}
+
+.user__description {
+  color: #757575;
+  font-size: 12px;
 }
