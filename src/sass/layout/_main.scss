@@ -1,8 +1,6 @@
 .section {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   margin-left: 349px;
   padding: 30px 40px 40px;
   background-color: var(--main-backgr-color);
@@ -11,6 +9,12 @@
   @include desktop {
     width: 968px;
   }
+}
+
+.section__title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .section__title {
@@ -40,4 +44,44 @@
 .input__icon {
   position: absolute;
   right: 220px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 16px;
+
+  th,
+  td {
+    font-weight: 500;
+    padding-top: 24px;
+    text-align: start;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--detail-color);
+  }
+}
+
+.table__header {
+  color: var(--second-text-color);
+}
+
+.table__data {
+  display: block;
+  width: 80px;
+  text-align: center;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: var(--btn-inactive-text-color);
+  border: 1px solid var(--btn-inactive-text-color);
+  background: var(--btn-inactive-backgr-color);
+}
+
+.table__data--active {
+  display: block;
+  width: 80px;
+  text-align: center;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: var(--btn-active-text-color);
+  border: 1px solid var(--btn-active-text-color);
+  background: var(--btn-active-backgr-color);
 }
