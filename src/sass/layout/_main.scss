@@ -1,13 +1,13 @@
 .section {
   position: relative;
-
-  margin-left: 349px;
-  padding: 30px 40px 40px;
+  width: 100%;
+  padding: 15px;
   background-color: var(--main-backgr-color);
   border-radius: 30px;
 
-  @include desktop {
-    width: 968px;
+  @include tablet {
+    margin-left: 349px;
+    padding: 30px 40px 40px;
   }
 }
 
@@ -20,44 +20,73 @@
 .section__title {
   margin-bottom: 7px;
   color: var(--title-text-color);
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.22px;
+
+  @include tablet {
+    font-size: 22px;
+  }
 }
 
 .section__text {
   color: #16c098;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: -0.14px;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .input {
-  width: 216px;
+  width: 180px;
   padding: 10px 10px 10px 40px;
   background-color: var(--special-backgr-color);
   border-radius: 10px;
   border-color: transparent;
   color: var(--second-text-color);
-  font-size: 12px;
+  font-size: 10px;
+
+  @include tablet {
+    width: 216px;
+    font-size: 12px;
+  }
 }
 
 .input__icon {
   position: absolute;
-  right: 220px;
+  right: 170px;
+
+  @include tablet {
+    right: 220px;
+  }
+}
+
+.table__wrap {
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .table {
-  width: 100%;
   margin-top: 16px;
   margin-bottom: 32px;
 
   th,
   td {
+    font-size: 12px;
     font-weight: 500;
-    padding-top: 24px;
     text-align: start;
-    padding-bottom: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--detail-color);
+
+    @include tablet {
+      font-size: 14px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
   }
 }
 
@@ -67,34 +96,57 @@
 
 .table__data {
   display: block;
-  width: 80px;
+  width: 65px;
   text-align: center;
-  padding: 4px 12px;
+  padding: 4px 8px;
   border-radius: 4px;
   color: var(--btn-inactive-text-color);
   border: 1px solid var(--btn-inactive-text-color);
   background: var(--btn-inactive-backgr-color);
+
+  @include tablet {
+    width: 80px;
+    padding: 4px 12px;
+  }
 }
 
 .table__data--active {
   display: block;
-  width: 80px;
+  width: 65px;
   text-align: center;
-  padding: 4px 12px;
+  padding: 4px 8px;
   border-radius: 4px;
   color: var(--btn-active-text-color);
   border: 1px solid var(--btn-active-text-color);
   background: var(--btn-active-backgr-color);
+
+  @include tablet {
+    width: 80px;
+    padding: 4px 12px;
+  }
 }
 
 .pagination {
+  margin-bottom: 8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .pagination__text {
   color: var(--second-text-color);
+  margin-bottom: 10px;
+  font-size: 12px;
+
+  @include tablet {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
 }
 
 .pagination__list {
@@ -110,9 +162,13 @@
   text-align: center;
   border-radius: 4px;
   color: var(--pagination-text-color);
-  font-size: 12px;
+  font-size: 10px;
   border: 1px solid var(--detail-color);
   background-color: var(--pagination-backgr-color);
+
+  @include tablet {
+    font-size: 12px;
+  }
 }
 
 .pagination__item--current {
