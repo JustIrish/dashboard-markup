@@ -49,6 +49,7 @@
 .table {
   width: 100%;
   margin-top: 16px;
+  margin-bottom: 32px;
 
   th,
   td {
@@ -84,4 +85,38 @@
   color: var(--btn-active-text-color);
   border: 1px solid var(--btn-active-text-color);
   background: var(--btn-active-backgr-color);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__text {
+  color: var(--second-text-color);
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination__item {
+  width: 24px;
+  height: 24px;
+  padding: 6px 0;
+  text-align: center;
+  border-radius: 4px;
+  color: var(--pagination-text-color);
+  font-size: 12px;
+  border: 1px solid var(--detail-color);
+  background-color: var(--pagination-backgr-color);
+}
+
+.pagination__item--current {
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  color: #ffffff;
 }
