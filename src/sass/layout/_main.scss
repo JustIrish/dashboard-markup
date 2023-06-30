@@ -1,6 +1,5 @@
 .section {
   position: relative;
-  width: 100%;
   padding: 15px;
   background-color: var(--main-backgr-color);
   border-radius: 30px;
@@ -65,13 +64,20 @@
 }
 
 .table__wrap {
-  width: 100%;
-  overflow-x: scroll;
+  margin-bottom: 20px;
+  @media screen and (max-width: 999px) {
+    overflow-x: scroll;
+  }
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .table {
+  width: 100%;
   margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 
   th,
   td {
@@ -81,6 +87,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--detail-color);
+
+    th:nth-child(1) {
+      color: #16c098;
+    }
 
     @include tablet {
       font-size: 14px;

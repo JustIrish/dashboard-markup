@@ -8,6 +8,98 @@
     <p class="logo__text">Dashboard</p>
     <p class="logo__series">v.01</p>
     <p class="header__text">Hello Evano 👋🏼,</p>
-    <button class="header__btn" type="button">=</button>
+    <button class="menu-open-btn" type="button">
+      <svg width="36" height="34">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <div class="mob-menu">
+      <button type="button" class="menu-close-btn">
+        <svg class="menu-close-btn__icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <p class="mob-menu__text">Hello Evano 👋🏼,</p>
+      <ul>
+        <li class="menu__item">
+          <svg class="menu__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-key-square"></use>
+          </svg>
+          <p class="menu__title">Dashboard</p>
+        </li>
+        <li class="menu__item">
+          <div class="menu__title-wrap">
+            <svg class="menu__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-d-square"></use>
+            </svg>
+            <p class="menu__title">Product</p>
+          </div>
+
+          <svg class="menu__chevron-right" width="16" height="16">
+            <use href="./images/icons.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+        <li class="menu__item menu__item--current">
+          <div class="menu__title-wrap">
+            <svg class="menu__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-user-square"></use>
+            </svg>
+            <p class="menu__title menu__title--current">Customers</p>
+          </div>
+
+          <svg class="menu__chevron-right" width="16" height="16">
+            <use href="./images/icons.svg#icon-chevron-right-current"></use>
+          </svg>
+        </li>
+        <li class="menu__item">
+          <div class="menu__title-wrap">
+            <svg class="menu__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-wallet-money"></use>
+            </svg>
+            <p class="menu__title">Income</p>
+          </div>
+
+          <svg class="menu__chevron-right" width="16" height="16">
+            <use href="./images/icons.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+        <li class="menu__item">
+          <div class="menu__title-wrap">
+            <svg class="menu__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-discount-shape"></use>
+            </svg>
+            <p class="menu__title">Promote</p>
+          </div>
+
+          <svg class="menu__chevron-right" width="16" height="16">
+            <use href="./images/icons.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+        <li class="menu__item">
+          <div class="menu__title-wrap">
+            <svg class="menu__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-message-question"></use>
+            </svg>
+            <p class="menu__title">Help</p>
+          </div>
+
+          <svg class="menu__chevron-right" width="16" height="16">
+            <use href="./images/icons.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="user">
+        <img
+          class="user__avatar"
+          src="./images/avatar.png"
+          alt="avatar"
+          width="42"
+        />
+        <div class="user__descrwrap">
+          <p class="user__name">Evano</p>
+          <p class="user__description">Project Manager</p>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
